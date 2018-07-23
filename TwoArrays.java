@@ -27,7 +27,6 @@ class ArraysHelper {
     }
 }
 
-
 class TwoArraysMethod {
     public static int[] mergeArrays(int[] a1, int[] a2) {
     int [] a3 = new int [a1.length + a2.length];
