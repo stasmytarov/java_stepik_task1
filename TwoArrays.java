@@ -28,16 +28,16 @@ class ArraysHelper {
 }
 
 class TwoArraysMethod {
-    public static int[] mergeArrays(int[] a1, int[] a2) {
-    int [] a3 = new int [a1.length + a2.length];
-    int z = 0;
-    int z1 = 0;
-    int z2 = 0;
-    if (a1 == null) 
-        return a2;
-    if (a2 == null) 
-        return a1;
-    for ( int y = 0; y <  a2.length; y++) {
+    public static int[] mergeArrays(int[] a1, int[] a2) { 
+        int [] a3 = new int [a1.length + a2.length];
+        int z = 0;
+        int z1 = 0;
+        int z2 = 0;
+        if (a1 == null) 
+            return a2; 
+        if (a2 == null) 
+            return a1; 
+        for ( int y = 0; y <  a2.length; y++) {
             for ( int x = z1; x < a1.length; x++) {
                 if (a1[x] <= a2[y]) { 
                     a3[z] = a1[x]; 
@@ -50,16 +50,16 @@ class TwoArraysMethod {
                  break;  
                 } 
             }  
-    }  
-    for (int x = z1; x < a1.length; x++) {
-           a3[z] = a1[x];
-           z = z + 1; 
-    }        
-    for ( int y = z2; y <  a2.length; y++) {
+        }  
+        for (int x = z1; x < a1.length; x++) { 
+            a3[z] = a1[x];
+            z = z + 1; 
+        }        
+        for ( int y = z2; y <  a2.length; y++) {
            a3[z] = a2 [y];
            z = z + 1;
-    }      
-    return a3;
+        }      
+        return a3;
     }
 }
 
